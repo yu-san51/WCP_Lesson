@@ -1,0 +1,3 @@
+name = "yuuki"
+
+puts name
