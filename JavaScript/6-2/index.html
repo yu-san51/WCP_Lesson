@@ -4,16 +4,19 @@
         <link rel="stylesheet" href="app.css">
     </head>
     <body>
-        <h1>childrenサンプル</h1>
-        <button>クリック</button>
-        <h3>リスト</h3>
-        <ul>
-            <li>Home</li>
-            <li>Concept</li>
-            <li>Products</li>
-            <li>Access</li>
-        </ul>
-    <script src="jquery.min.js"></script>
-    <script src="app.js"></script>
+        <script type="text/javascript">
+          function addsystem(x, y) {
+            var z = Number(x) + Number(y);
+            return z;
+          }
+        </script>
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <input type="button" value="addsystem" onclick="alert(addsystem(num1.value, num2.value))">
+
+
+    <!-- <script src="jquery.min.js"></script> -->
+    <!-- <script src="app.js"></script> -->
     </body>
 </html>
+
