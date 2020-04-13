@@ -5,15 +5,27 @@
     </head>
     <body>
         <script type="text/javascript">
-          function addsystem(x, y) {
-            var z = Number(x) + Number(y);
-            return z;
-          }
+            function handan(shadanki){
+                if(shadanki >= 4){
+                    if(shadanki > 6 || police.value == 1){
+                        document.getElementById("kekka") .innerHTML = "止まる";
+                    } else {
+                         document.getElementById("kekka").innerHTML = "ダッシュ";
+                    }
+                } else {
+                    document.getElementById("kekka").innerHTML = "進む";
+                }
+            }
         </script>
-        <input type="text" id="num1">
-        <input type="text" id="num2">
-        <input type="button" value="addsystem" onclick="alert(addsystem(num1.value, num2.value))">
-
+        <select id="police">
+            <option value="0" selected="selected">お巡りさんがいない</option>
+            <option value="1">お巡りさんがいる</option>
+        </select>
+        <input type="text" id="num">
+        <input type="button" value="判断" onclick="handan(num.value)">
+        <div id="kekka">
+            ここに結果を表示します
+        </div>
 
     <!-- <script src="jquery.min.js"></script> -->
     <!-- <script src="app.js"></script> -->
