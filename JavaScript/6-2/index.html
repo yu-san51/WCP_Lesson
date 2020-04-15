@@ -4,28 +4,9 @@
         <link rel="stylesheet" href="app.css">
     </head>
     <body>
-        <script type="text/javascript">
-            function Seito(_name, _seiseki){
-                this.name = _name;
-                this.seiseki = _seiseki;
-            }
-            var kumi = [];
-            kumi[0] = new Seito("yamada", 95);
-            kumi[1] = new Seito("tanaka", 73);
-            kumi[2] = new Seito("suzuki", 87);
-            kumi[3] = new Seito("katou", 53);
-            kumi[4] = new Seito("satou", 68);
-            var total = 0
-            for(var i=0; i<kumi.length; i++){
-                total += kumi[i].seiseki;
-            }
-             var ave = total/kumi.length;
-            document.write("heikinn  " + ave);
-
-
-        </script>
+        <p id="text"></p>
     <!-- <script src="jquery.min.js"></script> -->
-    <!-- <script src="app.js"></script> -->
+    <script src="app.js"></script>
     </body>
 </html>
 
